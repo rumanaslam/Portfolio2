@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 3.5rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: #1a1a1a;
+  }
+  
+  .footer-text {
+    font-size: 0.875rem; /* Default for small screens */
+    color: white;
+  }
+  
+  @media (min-width: 640px) {
+    .footer-text {
+      font-size: 1rem; /* Small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .footer-text {
+      font-size: 1.125rem; /* Medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .footer-text {
+      font-size: 1.25rem; /* Large screens */
+    }
+  }
+  

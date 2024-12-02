@@ -1,0 +1,101 @@
+/* Skills Section */
+
+/* Overall Section */
+.skills {
+    background-color: #aa5486;
+    padding: 60px 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Container */
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .skills-header {
+    margin-bottom: 40px;
+  }
+  
+  .skills-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .skills-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  
+  @media (min-width: 600px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Individual Skill Item */
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .skill-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Icon Colors */
+  .html-icon {
+    color: #e34f26;
+  }
+  
+  .css-icon {
+    color: #1572b6;
+  }
+  
+  .js-icon {
+    color: #f7df1e;
+  }
+  
+  .react-icon {
+    color: #61dafb;
+  }
+  
+  .node-icon {
+    color: #68a063;
+  }
+  
+  .github-icon {
+    color: #ffffff;
+  }
+  
+  .skill-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+  

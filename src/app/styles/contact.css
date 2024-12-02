@@ -1,0 +1,125 @@
+/* Contact Component Styles */
+
+/* Overall Container */
+.contact {
+    background-color: #aa5486; /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 50px 20px;
+  }
+  
+  /* Main Wrapper */
+  .contact-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Wrapper for both sides */
+  .contact-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-2 {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Left Section */
+  .contact-3 {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-5 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Contact Details */
+  .contact-6,
+  .contact-7 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  /* Right Section (Form) */
+  .contact-8 {
+    flex: 1;
+    background-color: #f9f9f9;
+    color: #333333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-9 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input Fields */
+  .contact-10,
+  .contact-13 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .contact-11,
+  .contact-14,
+  .contact-16 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .contact-12,
+  .contact-15,
+  .contact-17 {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .contact-17 {
+    resize: none;
+  }
+  
+  /* Submit Button */
+  .contact-18 {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-18:hover {
+    background-color: #444444;
+  }
+  

@@ -1,0 +1,83 @@
+/* navbar.css */
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center;
+  padding: 1rem 2rem; /* Add more spacing inside navbar */
+  background-color: #AA5486; /* Your chosen background color */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
+}
+
+/* Logo */
+.navbar-brand {
+  font-size: 2rem; /* Make the logo larger */
+  font-weight: bold;
+  color: white;
+  flex: 1; /* Push the logo slightly left */
+  margin-left: 1rem; /* Add space between logo and edge */
+}
+
+/* Desktop Menu */
+.navbar-menu {
+  display: flex;
+  gap: 2rem; /* Add spacing between menu items */
+  margin-right: 1rem; /* Push menu slightly left */
+  list-style: none; /* Remove bullets from list items */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Menu Links */
+.menu-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger menu text */
+  font-weight: 500;
+  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.menu-link a:hover {
+  color: #FFD700; /* Add a hover effect for better UX */
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.navbar-mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #AA5486;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-mobile-menu.open {
+  display: flex;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide desktop menu on mobile */
+  }
+
+  .hamburger-icon {
+    display: block; /* Show hamburger icon */
+  }
+}

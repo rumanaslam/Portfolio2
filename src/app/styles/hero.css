@@ -1,0 +1,106 @@
+/* Hero Section */
+#hero {
+  position: relative;
+  min-height: 100vh; /* Full height of viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #AA5486; /* Background color */
+  overflow: hidden;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%; /* Adjust the width of the image */
+  background-image: url('/pic.png'); /* Correct path */
+  background-repeat: no-repeat;
+  background-size: contain; /* Maintain aspect ratio */
+  background-position: right center; /* Align image */
+  z-index: 1; /* Ensure image is visible */
+}
+
+
+/* Hero Container */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default single-column layout */
+  height: auto; /* Allow flexibility for content height */
+  gap: 1rem; /* Add spacing between rows/columns */
+}
+
+/* Adjust for larger screens */
+.hero-container-lg {
+  grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  padding: 2rem; /* Add some padding */
+}
+
+/* Hero Row */
+.hero-row {
+  display: flex;
+  flex-direction: column; /* Stack items by default */
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center-align text for all screens */
+}
+
+/* Hero Text */
+.hero-text {
+  font-size: 40px; /* Mobile-first size */
+  font-weight: bold;
+  line-height: 1.2;
+  color: white;
+  text-align: center; /* Keep text centered */
+  padding: 0 1rem; /* Add horizontal padding */
+}
+
+.hero-text-lg {
+  font-size: 60px; /* Larger size for larger screens */
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1200px) {
+  #hero {
+    background-size: 38%; /* Medium size for tablets */
+    background-position: right center; /* Center image for balance */
+  }
+
+  .hero-text {
+    font-size: 60px; /* Larger text for tablets */
+    text-align: left; /* Left-align text on tablets */
+    padding: 0; /* Remove padding on larger screens */
+  }
+
+  .hero-text-lg {
+    font-size: 80px; /* Larger size for desktops */
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  #hero {
+    background-size: 40%; /* Slightly larger image for desktops */
+    background-position: right center; /* Align properly for widescreens */
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  #hero {
+    background-size: 80%; /* Make the image smaller on small screens */
+    background-position: center top; /* Center the image */
+  }
+
+
+
+  .hero-container {
+    gap: 2rem; /* Increase gap for smaller screens */
+  }
+
+  .hero-text {
+    font-size: 35px; /* Smaller font for mobile */
+  }
+}

@@ -1,0 +1,124 @@
+/* General Section Styling */
+.projects-section {
+    background-color: #aa5486;
+    padding: 60px 20px;
+    color: white;
+    position: relative;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .projects-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  @media (min-width: 600px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .projects-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-icon {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #aa5486;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-icon {
+    transform: scale(1.2);
+  }
+  
+  .project-title {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .project-technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .technology-tag {
+    background-color: #ffffff;
+    color: #aa5486;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 2px solid #aa5486;
+    font-size: 0.9rem;
+    font-family: monospace;
+  }
+  
+  .card-glow-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .card-glow-effect {
+    opacity: 1;
+  }
+  

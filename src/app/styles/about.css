@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #AA5486; /* Background */
+  line-height: 1.6;
+}
+
+/* Main About Section */
+.about-div {
+  padding: 5rem 2rem; /* Added side padding for smaller screens */
+  background-color: #AA5486; /* Background color */
+  color: white;
+}
+
+/* Container */
+.about-1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading Styles */
+.about-2 {
+  font-size: 2rem; /* Adjusted for smaller screens */
+  font-weight: bold;
+  margin-bottom: 2rem; /* Space Below */
+}
+
+@media (min-width: 768px) {
+  .about-2 {
+    font-size: 2.5rem; /* Larger Heading for bigger screens */
+  }
+}
+
+/* Image and Text Container */
+.about-3 {
+  display: flex;
+  flex-direction: column; /* Default for mobile screens */
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-3 {
+    flex-direction: row; /* Side-by-side on larger screens */
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+/* Profile Image Wrapper */
+.about-4 {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Profile Image */
+.about-5 {
+  border-radius: 50%;
+  width: 140px; /* Default smaller size */
+  height: 140px;
+  border: 4px solid white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .about-5 {
+    width: 224px; /* Larger Image */
+    height: 224px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-5 {
+    width: 280px; /* Even larger image for widescreens */
+    height: 280px;
+  }
+}
+
+/* Text Container */
+.about-6 {
+  max-width: 600px; /* Constrained width for readability */
+  text-align: center; /* Center-align on small screens */
+  font-size: 1rem; /* Base Text Size */
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .about-6 {
+    text-align: left; /* Align text left on larger screens */
+  }
+}
+
+.about-7 {
+  font-size: 1rem; /* Base size for mobile */
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .about-7 {
+    font-size: 1.1rem; /* Slightly larger text for larger screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-7 {
+    font-size: 1.2rem; /* Larger text for widescreens */
+  }
+}
